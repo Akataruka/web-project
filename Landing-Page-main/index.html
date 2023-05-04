@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rawpressery</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            @import url("https://fonts.cdnfonts.com/css/poppins");
+
+            body {
+                font-family: "Poppins", sans-serif;
+                margin: 0;
+            }
+
+            section.navbar {
+                position: relative;
+                background: #000;
+                padding: 1rem;
+            }
+
+            section.navbar img {
+                height: 4rem;
+                position: inherit;
+            }
+
+            div.navbar {
+                width: fit-content;
+                height: fit-content;
+                margin-left: auto;
+                margin-right: 20px;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+
+            a.navbar {
+                padding-left: 15px;
+                padding-right: 15px;
+                color: #fff;
+                font-size: 20px;
+                font-weight: 600;
+                transition: ease-in-out 0.5s;
+            }
+
+            a.navbar:hover {
+                color: #fff;
+                transform: scale(1.1);
+                transition: ease-in-out 0.5s;
+            }
+
+            section.home {
+                background-color: beige;
+            }
+
+            section.home img {
+                position: inherit;
+            }
+
+            section.home p {
+                position: absolute;
+                top: 40%;
+                left: 35px;
+                width: 50%;
+                font-size: 55px;
+                font-weight: 900;
+                line-height: 60px;
+            }
+
+            section.cart {
+                background-color: white;
+                padding: 20px;
+            }
+
+            div.juice {
+                border-radius: 25px;
+                padding: 25px;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                transition: 0.5s;
+            }
+
+            div.juice:hover {
+                transform: scale(1.05);
+                transition: ease-in-out 0.5s;
+            }
+
+            div.juice img {
+                width: 40%;
+                margin-left: 10px;
+            }
+
+            div.juicecontent h1 {
+                font-size: 3.5em;
+                font-weight: 900;
+                margin-bottom: 5px;
+            }
+
+            div.juicecontent h2 {
+                font-size: 1.2em;
+                font-weight: 900;
+                margin-bottom: 15px;
+            }
+
+            div.juicecontent button {
+                width: fit-content;
+                margin-top: 25px;
+                border-radius: 10px;
+                border-color: rgb(255, 179, 73);
+                border-width: 2px;
+                background: #000;
+                color: #fff;
+                padding: 5px;
+                padding-left: 15px;
+                padding-right: 15px;
+                transition: 5s;
+            }
+
+            div.juicecontent button:hover {
+                transform: scale(1.2);
+                transition: ease-in-out 0.5s;
+            }
+
+            section.footer {
+                width: 100%;
+                padding: 50px;
+                background-color: #000;
+            }
+
+            section.footer p {
+                font-size: large;
+                width: fit-content;
+                margin-left: auto;
+                margin-right: auto;
+                color: #fff;
+            }
+
+            section.footer h6 {
+                margin-top: 45px;
+                font-size: large;
+                width: 40%;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                color: #adadad;
+            }
+        </style>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <section class="navbar flex flex-row">
+            <img src="./assets/whiteLogo.png" alt="" />
+            <div class="navbar flex flex-row">
+                <a class="navbar" href="#">Home</a>
+                <a class="navbar" href="#">About</a>
+                <a class="navbar" href="#">Products</a>
+                <a class="navbar" href="#">Contact</a>
+            </div>
+        </section>
+
+        <section class="home relative">
+            <img src="./assets/JUICES.png" alt="" />
+            <p>Stock Up on your Favourites</p>
+        </section>
+
+        <section class="cart flex flex-col space-y-5">
+            <div
+                class="juice flex flex-row"
+                style="background-color: rgb(215, 152, 118)"
+            >
+                <div class="juicecontent container flex flex-col">
+                    <h1>Cold Coffee</h1>
+                    <h2>LACTOSE FREE | HIGH PROTEIN | DELIGHTFUL TASTE</h2>
+                    <p>
+                        If you're looking for an easy, guilt free and delicious
+                        way to get high quality protein everyday, then this one
+                        is for you
+                    </p>
+                    <button>Add to Cart</button>
+                </div>
+                <img src="./assets/bottle1.png" alt="" />
+            </div>
+
+            <div class="juice flex flex-row" style="background-color: beige">
+                <div class="juicecontent container flex flex-col">
+                    <h1>ALMOND MILK</h1>
+                    <h2>LACTOSE FREE | PLANT PROTEIN | VEGAN</h2>
+                    <p>
+                        Introducing Dairy free almond milk, Perfectly delicious
+                        and creamy dairy alternative packed with goodness of
+                        almonds
+                    </p>
+                    <button>Add to Cart</button>
+                </div>
+                <img src="./assets/bottle2.png" alt="" />
+            </div>
+
+            <div class="juice flex flex-row" style="background-color: #ffb6c1">
+                <div class="juicecontent container flex flex-col">
+                    <h1>Juices</h1>
+                    <h2>COLD EXTRACTED | DELICIOUS | NO ADDED COLOUR</h2>
+                    <p>
+                        Juices made with familiar, simple ingredients that are
+                        easy to recognize, understand and pronounce
+                    </p>
+                    <button>Add to Cart</button>
+                </div>
+                <img src="./assets/bottle3.png" alt="" />
+            </div>
+        </section>
+
+        <section class="footer flex flex-col">
+            <p>CONTACT</p>
+            <h6>
+                © 2023 RAW Pressery Pvt. Ltd. (formally known as Rakyan
+                Beverages Pvt. Ltd. for 18 months) Terms Privacy Policy Return &
+                Refund Policy
+            </h6>
+        </section>
+    </body>
+</html>
